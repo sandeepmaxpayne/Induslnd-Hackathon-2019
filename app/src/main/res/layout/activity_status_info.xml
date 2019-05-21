@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#4040"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:shadowColor="@android:color/background_dark"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/stat"/>
+    <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/namest"/>
+    <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/agest"/>
+    <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/accnost"/>
+    <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/acctypest"/>
+    <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/flagst"/>
+    <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/descst"/>
+    <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/mobilest"/>
+</LinearLayout>

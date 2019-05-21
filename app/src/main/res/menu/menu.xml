@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="status"
+          android:id="@+id/stat"
+          app:showAsAction="ifRoom|withText"/>
+    <item android:title="Savings Account"
+          android:id="@+id/savingacc"
+          app:showAsAction="never"/>
+    <item android:title="Loan"
+          android:id="@+id/loanacc"
+          app:showAsAction="never"/>
+    <item android:title="feedback"
+          android:id="@+id/feed"
+          app:showAsAction="never"/>
+    <item android:title="sign out"
+          android:id="@+id/signout"
+          app:showAsAction="never"/>
+
+
+</menu>

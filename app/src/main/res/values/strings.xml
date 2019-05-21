@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Indusland Bank</string>
+    <string name="addhar_number">Addhar Number</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="account_number">Account Number</string>
+    <string name="age">age</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="verify">Verify</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="register">Register</string>
+
+    <string-array name="acctype">
+        <item>Savings Account</item>
+        <item>Current Account</item>
+        <item>Loan Account</item>
+    </string-array>
+
+    <string-array name="countrycode">
+        <item>IN</item>
+        <item>USD</item>
+        <item>EURO</item>
+    </string-array>
+
+    <string-array name="nomineestatus">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string-array name="currency_code">
+        <item>INR</item>
+        <item>USD</item>
+        <item>EURO</item>
+    </string-array>
+
+    <string-array name="loantypes">
+        <item>PERSONEL LOAN</item>
+        <item>CREDIT CARDS</item>
+        <item>HOME-EQUITY</item>
+        <item>HOME-EQUITY LINE</item>
+    </string-array>
+
+    <string-array name="recharge_type">
+        <item>MOBILE</item>
+        <item>DTH</item>
+        <item>BILL PAYMENT</item>
+        <item>ELECTRICITY</item>
+        <item>GAS</item>
+    </string-array>
+</resources>

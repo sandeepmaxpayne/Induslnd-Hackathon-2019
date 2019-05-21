@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "597595754528",
+    "firebase_url": "https://induslandbank-12736.firebaseio.com",
+    "project_id": "induslandbank-12736",
+    "storage_bucket": "induslandbank-12736.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597595754528:android:2510889872944a5c",
+        "android_client_info": {
+          "package_name": "com.sandeep.induslandbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597595754528-j67fcuhfi99c5a0q6viqc55jr5urmdpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJrFTS5ZIDiiI-nciZUrdMaA0Io74RrvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597595754528-j67fcuhfi99c5a0q6viqc55jr5urmdpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

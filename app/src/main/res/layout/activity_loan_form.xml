@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#4040"
+        android:orientation="vertical"
+        tools:context=".form_register.LoanForm">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="Loan Account Registration"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/regloanform"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/loanaccname" android:hint="account name"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/cust_id" android:hint="customer id"/>
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/curr_code"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/loandateopen" android:hint="account opening date"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/duration" android:hint="duration"/>
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/l_type"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Joint hoder name 1"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:ems="10"
+                    android:id="@+id/loanjoin1"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Joint hoder name 2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:ems="10"
+                    android:id="@+id/loanjoin2"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Joint hoder name 3"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:ems="10"
+                    android:id="@+id/loanjoin3"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/statcode" android:hint="freeze status code"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/loanph" android:hint="@android:string/emptyPhoneNumber"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/loantenno" android:hint="telephone number (optional)"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/loanfax" android:hint="fax number (optional)"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/loaneadr" android:hint="email address"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:gravity="start|top"
+                    android:ems="10"
+                    android:id="@+id/laddr1" android:hint="address 1"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:gravity="start|top"
+                    android:ems="10"
+                    android:id="@+id/laddr2" android:hint="address 2"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:gravity="start|top"
+                    android:ems="10"
+                    android:id="@+id/laddr3" android:hint="address 3"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/loancity" android:hint="city"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/loanstate" android:hint="state"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/loanpostcode" android:hint="postal code"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/loancoun" android:hint="country"/>
+            <Button
+                    android:text="Register"
+                    android:layout_gravity="center"
+                    android:background="#4041"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/loanReg"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
