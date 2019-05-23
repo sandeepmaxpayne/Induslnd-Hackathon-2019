@@ -9,4 +9,7 @@ Fintech Hackathon
 * As it is the prototype of lite user transaction application, so duplicacy of Aadhar number is not allowed , otherwise all the data in the data in the database will be modified and updated when duplicate Aadhar number is used again to register. This could be one drawback and this gives us an idea that this duplicacy will not be allowed in real application which can create a problem
 
 
-Output file of this android application : "https://docs.google.com/uc?export=download&id=17aTvd-d7AGDPRJxRSrB47Jd-hvzIJ1FY"
+Output file of this android application :
+
+1."https://docs.google.com/uc?export=download&id=17aTvd-d7AGDPRJxRSrB47Jd-hvzIJ1FY" without icon image
+2."https://docs.google.com/uc?export=download&id=15mfQp8LnX9Pqp-QGFNKoqlGEgE4WEXYp" with icon image
