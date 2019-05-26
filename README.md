@@ -7,7 +7,8 @@ Fintech Hackathon
 * User must enter only the account number that is registered with the Aadhar Number, otherwise the user can not perfom any transaction.
 
 * As it is the prototype of lite user transaction application, so duplicacy of Aadhar number is not allowed , otherwise all the data in the data in the database will be modified and updated when duplicate Aadhar number is used again to register. This could be one drawback and this gives us an idea that this duplicacy will not be allowed in real application which can create a problem
-
+ 
+Short video demonstration about the application made: "https://drive.google.com/file/d/1SKsJr1V08ED-pj_57gK6vTAdaGBNJW2Z/view?usp=sharing"
 
 Output file of this android application :
 
