@@ -15,4 +15,16 @@ Short video demonstration about the application made: "https://drive.google.com/
 Output file of this android application :
 
 1."https://docs.google.com/uc?export=download&id=17aTvd-d7AGDPRJxRSrB47Jd-hvzIJ1FY" without icon image
-2."https://docs.google.com/uc?export=download&id=15mfQp8LnX9Pqp-QGFNKoqlGEgE4WEXYp" with icon image
+
+Fully Completed and Finalized Application:
+"https://drive.google.com/file/d/1igdAWXNr3ga9ABtoagWt6AU4z-DT2em_/view?usp=sharing"
+
+* Features included:
+Extensions made to previous application 
+
+1. Random Otp verification login
+2. Passwordless Login [concept using M.L]
+3. Delivery Prdiction
+4. Compare your products and get a choice of choosing the product according to app's decision
+5. Customers can satisfy themselves by browsing to other online stores.
+6. User Interface
