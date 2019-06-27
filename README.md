@@ -1,4 +1,5 @@
-# Induslnd-Hackathon-2019 Prototype [JIO-CODE-GLADIATORS FINAL ROUND SOLUTION]
+# Induslnd-Hackathon-2019 Prototype 
+# [JIO-CODE-GLADIATORS FINAL ROUND SOLUTION]
 Fintech Hackathon 
 ``This is the prototype project made on the problem statement Induslnd Hackathon 2019 organised by Techgigg``
 
@@ -11,7 +12,7 @@ Fintech Hackathon
  
  Problem Statement: "https://drive.google.com/file/d/1btbSVbrMMgJxMVL9dMsX33Z6CYv4kHdp/view?usp=sharing"
  
- Solution: Power Point link "https://drive.google.com/file/d/1VkqepH3UOaeytUVBKizAksW-PGkPJ7EI/view?usp=sharing"
+ Solution: Power Point link: "https://drive.google.com/file/d/1E28_6656UZvko9Rdn_s1RsVJ3Cqz51q0/view?usp=sharing"
 
 Short video demonstration about the application made: "https://drive.google.com/file/d/1SKsJr1V08ED-pj_57gK6vTAdaGBNJW2Z/view?usp=sharing"
 
