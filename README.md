@@ -1,5 +1,4 @@
-# Induslnd-Hackathon-2019 Prototype 
-# [JIO-CODE-GLADIATORS FINAL ROUND SOLUTION]
+# Induslnd-Hackathon-2019 Prototype       [JIO-CODE-GLADIATORS FINAL ROUND SOLUTION]
 Fintech Hackathon 
 ``This is the prototype project made on the problem statement Induslnd Hackathon 2019 organised by Techgigg``
 
