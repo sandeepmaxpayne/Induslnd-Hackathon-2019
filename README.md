@@ -23,8 +23,8 @@ Fully Completed and Finalized Application:
 Extensions made to previous application 
 
 1. Random Otp verification login
-2. Passwordless Login [concept using M.L]
+2. Passwordless Login [concept using M.L face recognition] // partially implemented
 3. Delivery Prdiction
 4. Compare your products and get a choice of choosing the product according to app's decision
 5. Customers can satisfy themselves by browsing to other online stores.
-6. User Interface
+6. User Interface changeable
