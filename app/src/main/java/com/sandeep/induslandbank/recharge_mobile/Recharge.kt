@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -13,8 +14,6 @@ import com.google.firebase.database.FirebaseDatabase
 import com.sandeep.induslandbank.R
 import com.sandeep.induslandbank.UserAcc
 import kotlinx.android.synthetic.main.activity_recharge.*
-import kotlinx.android.synthetic.main.activity_register.*
-import java.lang.StringBuilder
 
 
 class Recharge : AppCompatActivity() {
@@ -30,6 +29,9 @@ class Recharge : AppCompatActivity() {
     var curramt: Int = 0
     var rechid: String? = null
     var ramt: String? = null
+//    var xx  = ""
+//    var yy = ""
+//    var msg = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recharge)
@@ -62,6 +64,16 @@ class Recharge : AppCompatActivity() {
             rnarr = rdrrnarr.text.toString()
             cnrr = rcrnarr.text.toString()
             pan = recpan.text.toString()
+
+
+//            for(i in 0 until pan!!.length/2){
+//                xx += pan!![i].toString()
+//            }
+//            for(i in pan!!.length/2 until pan!!.length-1){
+//                yy += pan!![i].toString()
+//            }
+//            Log.d("xx", "${xx} y:$yy")
+
             if (recadhaar!!.length != 12) {
                 displaywrongID()
               //  Toast.makeText(this@Recharge, "Please enter valid aadhar number", Toast.LENGTH_SHORT).show()
@@ -80,10 +92,11 @@ class Recharge : AppCompatActivity() {
             } else if (rnarr!!.isEmpty().or(cnrr!!.isEmpty())) {
                 Toast.makeText(this@Recharge, "Please enter credit and debit narration", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
-            } else if (pan!!.isEmpty()) {
+            } else if (pan!!.isEmpty().or(pan!!.length != 10)) {
                 Toast.makeText(this@Recharge, "Please enter Pan number", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
-            } else {
+            }
+            else {
                 if (curramt < ramt!!.toInt()) {
                     failure()
                     return@setOnClickListener
@@ -93,9 +106,13 @@ class Recharge : AppCompatActivity() {
                 val ref = FirebaseDatabase.getInstance().getReference()
                 loadWithdrawDatabase(ref)
                 displaySucc()
-
             }
+
+
+
+
         }
+
 
     }
 
@@ -121,6 +138,7 @@ class Recharge : AppCompatActivity() {
             })
         val alert = diagbuild.create()
         alert.setTitle("RECHARGE SUCCESS")
+        alert.setIcon(R.drawable.check_mark)
         alert.show()
     }
     private fun failure(){
@@ -135,6 +153,7 @@ class Recharge : AppCompatActivity() {
             })
         val alert = dialogMess.create()
         alert.setTitle("RECHARGE FAILURE")
+        alert.setIcon(R.drawable.cross)
         alert.show()
     }
     private fun displaywrongID(){
@@ -149,6 +168,7 @@ class Recharge : AppCompatActivity() {
             })
         val alert = dialogMess.create()
         alert.setTitle("ERROR ID")
+        alert.setIcon(R.drawable.warnings)
         alert.show()
     }
     private fun wrongAccNo(){
@@ -163,6 +183,7 @@ class Recharge : AppCompatActivity() {
             })
         val alert = dialogbuilder.create()
         alert.setTitle("Account Error !")
+        alert.setIcon(R.drawable.error)
         alert.show()
     }
 

@@ -16,6 +16,7 @@
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical">
             <TextView
+                    android:background="@color/green"
                     android:text="Savings Account Registration"
                     android:textStyle="italic"
                     android:textSize="20dp"
@@ -24,33 +25,50 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:id="@+id/regloan"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/red"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/accname" android:hint="account name"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/green"
+                    android:background="@drawable/round_edges_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
                     android:id="@+id/sav_acc_no" android:hint="@string/account_number"/>
             <Spinner
+                    android:layout_marginTop="1dp"
+                    android:popupBackground="@color/deep_purple"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/countcode"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/dark"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="date"
                     android:ems="10"
                     android:id="@+id/dob" android:hint="enter date of birth"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/green"
+                    android:background="@drawable/round_edges_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="date"
                     android:ems="10"
                     android:id="@+id/accopendate" android:hint="account opening date"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/buttonDark"
+                    android:background="@drawable/round_edges_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -60,6 +78,9 @@
                     android:ems="10"
                     android:id="@+id/join1"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/hotPink"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -69,6 +90,9 @@
                     android:ems="10"
                     android:id="@+id/join2"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/gray"
+                    android:background="@drawable/round_edges_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -78,30 +102,45 @@
                     android:ems="10"
                     android:id="@+id/join3"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/firebrick"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/sph" android:hint="@android:string/emptyPhoneNumber"/>
             <EditText
+                    android:backgroundTint="@color/coldPink"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/savtenno" android:hint="telephone number (optional)"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/lightViolet"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/savfax" android:hint="fax number (optional)"/>
             <EditText
+                    android:backgroundTint="@color/mediumPink"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:ems="10"
                     android:id="@+id/eadr" android:hint="email address"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/blue"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -109,6 +148,9 @@
                     android:ems="10"
                     android:id="@+id/addr1" android:hint="address 1"/>
             <EditText
+                    android:backgroundTint="@color/salmon"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -116,6 +158,9 @@
                     android:ems="10"
                     android:id="@+id/addr2" android:hint="address 2"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/pink"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -123,33 +168,50 @@
                     android:ems="10"
                     android:id="@+id/addr3" android:hint="address 3"/>
             <EditText
+                    android:backgroundTint="@color/pink_accent"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/savcity" android:hint="city"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="match_parent"
+                    android:layout_marginTop="1dp"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/savstate" android:hint="state"/>
             <EditText
+                    android:backgroundTint="@color/lightViolet"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/savpostcode" android:hint="postal code"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/firebrick"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/coun" android:hint="country"/>
             <Spinner
+                    android:popupBackground="@color/salmon"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/nomineebool"/>
             <EditText
+                    android:backgroundTint="@color/mediumPink"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="date"
@@ -157,6 +219,9 @@
                     android:hint="nominee date of birth"
                     android:id="@+id/nominnedob"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -165,6 +230,9 @@
                     android:id="@+id/nomname"/>
 
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/pink_accent"
+                    android:background="@drawable/round_edges_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -172,6 +240,9 @@
                     android:ems="10"
                     android:id="@+id/nomrelation"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/lightViolet"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
@@ -179,9 +250,12 @@
                     android:ems="10"
                     android:id="@+id/nomineephone"/>
             <Button
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/yellow"
+                    android:backgroundTintMode="multiply"
                     android:text="Register"
                     android:layout_gravity="center"
-                    android:background="#4041"
+                    android:background="@drawable/button_circle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:id="@+id/savReg"/>
 

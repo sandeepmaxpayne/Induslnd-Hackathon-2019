@@ -3,19 +3,13 @@ package com.sandeep.induslandbank
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Layout
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Toast
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_saving_account.*
-import kotlinx.android.synthetic.main.activity_savings_form.*
 import kotlinx.android.synthetic.main.saving_status.*
 import kotlinx.android.synthetic.main.saving_status.dob
 import kotlinx.android.synthetic.main.saving_status.join1
@@ -88,7 +82,7 @@ class SavingAccount : AppCompatActivity() {
         }
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.statusmenu, menu)
+        menuInflater.inflate(R.menu.home, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

@@ -10,6 +10,11 @@
         android:orientation="vertical"
         tools:context=".LoanAccount">
     <EditText
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColorHint="@color/gray"
+            android:backgroundTint="@color/yellow"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -17,6 +22,11 @@
             android:hint="Adhaar Number"
             android:id="@+id/loanadhaarNum"/>
     <EditText
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/round_edges_login"
+            android:backgroundTint="@color/mediumPink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -24,6 +34,10 @@
             android:hint="Loan Account Number"
             android:id="@+id/loanaccNum"/>
     <Button
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/gray"
+            android:background="@drawable/button_round"
+            android:backgroundTintMode="src_over"
             android:text="check status"
             android:layout_width="wrap_content"
             android:layout_gravity="center_horizontal"

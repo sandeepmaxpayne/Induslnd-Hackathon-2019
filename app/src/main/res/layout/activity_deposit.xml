@@ -11,55 +11,87 @@
         tools:context=".cash.Deposit">
 
     <EditText
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:gravity="center"
             android:ems="10"
             android:id="@+id/depositadhaar" android:hint="@string/aadhar_number"/>
     <EditText
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edges_login"
+            android:backgroundTint="@color/lightViolet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/deposit_acc_no" android:hint="@string/account_number"/>
     <Spinner
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/deep_purple"
+            android:popupBackground="@drawable/spinner_back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/depspincode"/>
     <EditText
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/deep_purple"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/deposit_amt" android:hint="amount"/>
     <EditText
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/green"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/depositdebnarr" android:hint="debit narration (optional)"/>
     <EditText
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/light_gray"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/depositcrnarr" android:hint="credit narration (optiona;l)"/>
+            android:id="@+id/depositcrnarr" android:hint="credit narration (optional)"/>
     <TextView
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textSize="18sp"
             android:id="@+id/dep_curr_bal" android:hint="available balance"/>
     <EditText
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/yellow"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/panno" android:hint="pan number (optional)"/>
     <Button
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/green"
             android:text="deposit"
             android:layout_gravity="center"
             android:textSize="18sp"
-            android:background="#4041"
+            android:background="@drawable/button_round"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btndeposit"/>
 

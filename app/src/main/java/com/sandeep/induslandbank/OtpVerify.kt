@@ -12,6 +12,7 @@ import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
+import com.sandeep.induslandbank.passwordless_login.FaceVerification
 import kotlinx.android.synthetic.main.activity_otp_verify.*
 import kotlinx.android.synthetic.main.activity_register.*
 import java.util.concurrent.TimeUnit
@@ -42,6 +43,13 @@ class OtpVerify : AppCompatActivity() {
         authenticateBtn.setOnClickListener {
             view: View -> progress.visibility = View.INVISIBLE
             authenticate()
+        }
+        bioLogin.setOnClickListener {
+            val bioIn = Intent(this@OtpVerify, FaceVerification::class.java)
+            intent.putExtra("acc", aacc)
+            intent.putExtra("adhar", adhNum)
+            intent.putExtra("agg", userage)
+            startActivity(bioIn)
         }
     }
     private fun verificationCallBacks(){
@@ -102,7 +110,7 @@ class OtpVerify : AppCompatActivity() {
 
 
 
-            var authotp = otp.text.toString()
+            val authotp = otp.text.toString()
          //   verificationId = "123456"
             // otp not able to send
             val credential: PhoneAuthCredential = PhoneAuthProvider.getCredential(verificationId, authotp)
@@ -117,7 +125,7 @@ class OtpVerify : AppCompatActivity() {
                 intent.putExtra("acc", aacc)
                 intent.putExtra("adhar", adhNum)
                 intent.putExtra("agg", userage)
-              //  intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 startActivity(intent)
             }else{
                 Toast.makeText(this@OtpVerify, "Cannot Create credential without either verification proof", Toast.LENGTH_SHORT).show()

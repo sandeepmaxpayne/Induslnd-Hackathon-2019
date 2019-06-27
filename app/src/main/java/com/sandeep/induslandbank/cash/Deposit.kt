@@ -118,6 +118,7 @@ class Deposit : AppCompatActivity() {
           })
       val alert = dialogbuilder.create()
       alert.setTitle("Transaction")
+      alert.setIcon(R.drawable.check_mark)
       alert.show()
   }
     private fun wrongIDdisplay(){
@@ -131,6 +132,7 @@ class Deposit : AppCompatActivity() {
                 dialog, which ->  dialog.cancel()
             })
         val alert = dialogbuilder.create()
+        alert.setIcon(R.drawable.warnings)
         alert.setTitle("Transaction")
         alert.show()
     }
@@ -145,6 +147,7 @@ class Deposit : AppCompatActivity() {
                     dialog, which ->  dialog.cancel()
             })
         val alert = dialogbuilder.create()
+        alert.setIcon(R.drawable.warnings)
         alert.setTitle("Transaction")
         alert.show()
     }

@@ -10,7 +10,6 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_loan_account.*
-import kotlinx.android.synthetic.main.activity_loan_form.*
 import kotlinx.android.synthetic.main.loan_status.*
 import kotlinx.android.synthetic.main.loan_status.loanaccname
 
@@ -70,7 +69,7 @@ class LoanAccount : AppCompatActivity() {
         }
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.statusmenu, menu)
+        menuInflater.inflate(R.menu.home, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

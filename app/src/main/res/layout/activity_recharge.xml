@@ -10,59 +10,111 @@
         android:layout_gravity="center_horizontal"
         tools:context=".recharge_mobile.Recharge">
     <TextView
+            android:textColor="@color/mediumPink"
+            android:layout_marginTop="5dp"
             android:text="Balance"
+            android:textColorHint="@color/black"
             android:textStyle="bold"
             android:textSize="24sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/balView"/>
     <EditText
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/pink"
+            android:backgroundTintMode="multiply"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/payaadhar" android:hint="aahaer number"/>
+            android:id="@+id/payaadhar" android:hint="aadhaar number"/>
     <EditText
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:background="@drawable/round_edges_login"
+            android:backgroundTintMode="add"
+            android:backgroundTint="@color/firebrick"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/recaccno" android:hint="acount number"/>
+            android:id="@+id/recaccno" android:hint="account number"/>
     <EditText
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/yellow"
+            android:backgroundTintMode="add"
+            android:background="@drawable/round_edges_login"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/rechamt" android:hint="recharge amount"/>
+            android:id="@+id/rechamt" android:hint="enter recharge amount"/>
     <Spinner
+
+            android:popupBackground="@drawable/spinner_back"
+            android:background="@color/firebrick"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/dthrech"/>
     <EditText
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:background="@drawable/round_edges_login"
+            android:backgroundTintMode="src_over"
+            android:backgroundTint="@color/deep_purple"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/dthnum" android:hint="mobile, DTH number (to recharge)"/>
+            android:id="@+id/dthnum" android:hint="enter your mobile, DTH number (to recharge)"/>
     <EditText
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/green"
+            android:backgroundTintMode="add"
+            android:background="@drawable/round_edges_login"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/rcrnarr" android:hint="note for Credit Narration (mandatory)"/>
     <EditText
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:background="@drawable/round_edges_login"
+            android:backgroundTintMode="add"
+            android:backgroundTint="@color/coldPink"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/rdrrnarr" android:hint="Note for Debit Narration (mandatory)"/>
     <EditText
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/hotPink"
+            android:backgroundTintMode="add"
+            android:background="@drawable/round_edges_login"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/recpan" android:hint="PAN NUMBER"/>
+            android:id="@+id/recpan" android:hint="enter PAN NUMBER [ABCDE1234A]"/>
     <Button
+            android:backgroundTint="@color/firebrick"
+            android:backgroundTintMode="src_over"
             android:text="Recharge"
-            android:background="#4044"
+            android:background="@drawable/button_round"
+            android:layout_marginTop="15dp"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btn_rech"/>

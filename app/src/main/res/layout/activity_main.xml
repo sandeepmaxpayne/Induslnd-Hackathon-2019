@@ -11,18 +11,30 @@
         tools:context=".MainActivity">
 
     <EditText
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/pink"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/adhharNumber" android:hint="@string/addhar_number"/>
     <Button
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/button_round"
             android:text="@string/log_in"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/login"/>
     <Button
+            android:layout_marginTop="5dp"
+            android:backgroundTintMode="add"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/button_round"
             android:text="@string/sign_up"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"

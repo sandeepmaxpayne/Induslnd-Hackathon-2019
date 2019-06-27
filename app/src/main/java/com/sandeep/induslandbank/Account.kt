@@ -13,7 +13,10 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.sandeep.induslandbank.cash.Deposit
 import com.sandeep.induslandbank.cash.Withdraw
+import com.sandeep.induslandbank.invest.InvestList
+import com.sandeep.induslandbank.invest.InvestMoney
 import com.sandeep.induslandbank.recharge_mobile.Recharge
+import com.sandeep.induslandbank.shop_items.Category
 import kotlinx.android.synthetic.main.activity_account.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_register.*
@@ -39,8 +42,6 @@ class Account : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         adhaarnum = bundle?.getString("adhar")
         userage = bundle?.getString("agg")
-
-
 
         withdraw.setOnClickListener {
 
@@ -70,6 +71,29 @@ class Account : AppCompatActivity() {
             intent.putExtra("id", uid)
             intent.putExtra("useracc", acount)
             intent.putExtra("addar", adhaarnum)
+            startActivity(intent)
+        }
+        appinfo.setOnClickListener {
+            fetchUserBalance()
+            Log.d("info", "amt:$amount, $uid, $acount, $adhaarnum")
+            val intent = Intent(this@Account, Information::class.java)
+            intent.putExtra("useracc", acount)
+            intent.putExtra("addar", adhaarnum)
+            startActivity(intent)
+
+        }
+        shopping.setOnClickListener {
+            fetchUserBalance()
+            val intent = Intent(this@Account, Category::class.java)
+            intent.putExtra("useracc", acount)
+            intent.putExtra("addar", adhaarnum)
+            startActivity(intent)
+        }
+        investMny.setOnClickListener {
+            val intent = Intent(this@Account, InvestMoney::class.java)
+            intent.putExtra("useracc", acount)
+            intent.putExtra("addar", adhaarnum)
+            intent.putExtra("am", amount)
             startActivity(intent)
         }
 
@@ -178,6 +202,7 @@ class Account : AppCompatActivity() {
                 if(amount == null){
                     loadDepositDatabase(loadref)
                 }
+
             }
 
             override fun onCancelled(p0: DatabaseError) {

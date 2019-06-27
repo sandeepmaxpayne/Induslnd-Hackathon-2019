@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Indusland Bank</string>
-    <string name="addhar_number">Addhar Number</string>
+    <string name="addhar_number">Enter Aadhar Number</string>
     <string name="log_in">Log in</string>
     <string name="sign_up">Sign Up</string>
     <string name="aadhar_number">Aadhar Number</string>
@@ -8,7 +8,7 @@
     <string name="age">age</string>
     <string name="enter_your_name">Enter your Name</string>
     <string name="verify">Verify</string>
-    <string name="verification_code">Verification Code</string>
+    <string name="verification_code">Enter Verification Code</string>
     <string name="register">Register</string>
 
     <string-array name="acctype">
@@ -48,4 +48,49 @@
         <item>ELECTRICITY</item>
         <item>GAS</item>
     </string-array>
+
+    <string-array name="shop_type">
+        <item>None</item>
+        <item>FLIPKART</item>
+        <item>SNAP DEAL</item>
+        <item>AMAZON</item>
+        <item>MYNTRA</item>
+        <item>GOIBIBO</item>
+    </string-array>
+
+    <string-array name="interest_year">
+        <item>None</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>>=5</item>
+    </string-array>
+
+    <string name="abc1">1st Item</string>
+    <string name="abc2">2nd Item</string>
+    <string name="abc3">3rd Item</string>
+    <string name="abc4">4th Item</string>
+    <string name="abc5">5th Item</string>
+    <string name="blazzer">Blazzer</string>
+    <string name="jeans">Jean</string>
+    <string name="bag">bags</string>
+    <string name="pant">Pant</string>
+    <string name="trouser">trou</string>
+
+    <string name="phone1">p1</string>
+    <string name="phone2">p2</string>
+    <string name="phone3">p3</string>
+    <string name="phone4">p4</string>
+    <string name="phone5">p5</string>
+    <string name="phone6">p6</string>
+    <string name="phone7">p7</string>
+
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission. The
+        application will now exit.
+    </string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="ok">Ok</string>
+
 </resources>

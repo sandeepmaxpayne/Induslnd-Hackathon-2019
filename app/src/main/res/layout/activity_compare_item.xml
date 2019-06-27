@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightPink"
+        android:orientation="vertical"
+        tools:context=".shop_items.CompareItem">
+
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Spinner
+                android:layout_width="220dp"
+                android:popupBackground="@color/mediumPink"
+                android:layout_height="wrap_content"
+                android:id="@+id/shoptype" android:layout_weight="1"/>
+        <TextView
+                android:text="KIRANA STORE"
+                android:layout_width="220dp"
+                android:textColor="@color/firebrick"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="15dp"
+                  android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:hint="Enter Price in ₹"
+                android:id="@+id/flipVal" android:layout_weight="1"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Enter Price in ₹"
+                android:ems="10"
+                android:id="@+id/kiranVal" android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_marginBottom="15dp"
+                  android:layout_height="wrap_content">
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:hint="Warranty in Year"
+                  android:ems="10"
+                  android:id="@+id/wrr1"
+                  android:inputType="number"/>
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:hint="Warranty in Year"
+                  android:ems="10"
+                  android:id="@+id/wrr2"
+                  android:inputType="number"/>
+    </LinearLayout>
+    <Button
+            android:text="Compare"
+            android:background="@drawable/button_circle"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btncmp"/>
+
+
+
+</LinearLayout>

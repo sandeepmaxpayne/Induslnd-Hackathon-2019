@@ -10,6 +10,12 @@
         android:background="#4040"
         tools:context=".OtpVerify">
     <EditText
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/pink"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:backgroundTint="@color/deep_purple"
+            android:background="@drawable/round_edges_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -17,23 +23,31 @@
             android:id="@+id/otp"
             android:hint="@string/verification_code"/>
     <ProgressBar
+            android:layout_marginTop="5dp"
             style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/progress"/>
     <Button
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/deep_purple"
+            android:backgroundTintMode="add"
             android:text="@string/verify"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
-            android:background="#4041"
+            android:background="@drawable/button_circle"
             android:layout_height="wrap_content" android:id="@+id/verifyBtn"/>
     <Button
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="@color/deep_purple"
             android:text="Authenticate"
             android:layout_width="wrap_content"
-            android:background="#4041"
+            android:background="@drawable/button_round"
             android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content" android:id="@+id/authenticateBtn"/>
     <TextView
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
@@ -42,4 +56,16 @@
             android:textStyle="italic"
             android:textColor="@color/black"
             android:layout_height="wrap_content" android:id="@+id/randomval"/>
+    <Button
+
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_round"
+            android:backgroundTint="@color/green"
+            android:autoSizeMaxTextSize="25dp"
+            android:backgroundTintMode="add"
+            android:text="PasswordLess Login using Biometric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bioLogin"/>
 </LinearLayout>

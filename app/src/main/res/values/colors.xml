@@ -7,4 +7,32 @@
     <color name="black">#242323</color>
     <color name="dark">#0F6FB6</color>
     <color name="pink">#EC1809</color>
+    <color name="background">#BA6BDBA8</color>
+    <color name="deep_purple">#7c4dff</color>
+    <color name="light_gray">#ededed</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="pink_accent">#ff4081</color>
+    <color name="light_back">#84CE85</color>
+    <color name="loginDark">#6B43A6D3</color>
+    <color name="buttonDark">#A30377F4</color>
+    <color name="gray">#5B030303</color>
+    <color name="light">#B4FFE165</color>
+
+    <color name="inred">#CD5C5C</color>
+    <color name="light_red">#f08080</color>
+    <color name="salmon">#FA8072</color>
+    <color name="darkSalmon">#E9967A</color>
+    <color name="lightSalmon">#FFA07A</color>
+    <color name="crimson">#DC143C</color>
+    <color name="red">#FF0000</color>
+    <color name="firebrick">#B22222</color>
+    <color name="darkRed">#8B0000</color>
+    <color name="lightPink">#FFC0CB</color>
+    <color name="coldPink">#FFB6C1</color>
+    <color name="hotPink">#FF1493</color>
+    <color name="deepPink">#FF1493</color>
+    <color name="mediumPink">#C71585</color>
+    <color name="lightViolet">#DB7093</color>
+
 </resources>

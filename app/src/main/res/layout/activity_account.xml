@@ -8,36 +8,40 @@
         android:background="#4044"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
+        android:padding="10dp"
         tools:context=".Account">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
 
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <Button
-                android:text="Deposit balance"
-                android:background="#4044"
-                android:layout_gravity="left"
-                android:layout_marginLeft="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/deposit" tools:layout_editor_absoluteY="106dp"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="8dp"/>
-        <Button
-                android:text="Withdrraw Balance"
-                android:background="#4046"
-                android:layout_marginLeft="80dp"
-                android:layout_width="wrap_content"
-                android:layout_gravity="clip_horizontal"
-                android:layout_height="wrap_content" android:id="@+id/withdraw" tools:layout_editor_absoluteY="189dp"
-                app:layout_constraintStart_toStartOf="@+id/deposit" app:layout_constraintEnd_toEndOf="@+id/deposit"/>
+
     </LinearLayout>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <TextView
-                android:text="TextView"
+                android:text="Welcome To Transaction Home"
+                android:layout_width="wrap_content"
+                android:textColor="@color/pink"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"  android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Balance Left"
                 android:textSize="25dp"
                 android:textStyle="italic"
                 android:textColor="@color/dark"
@@ -45,17 +49,221 @@
                 android:gravity="center"
                 android:layout_height="wrap_content" android:id="@+id/accBal" android:layout_weight="1"/>
     </LinearLayout>
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <TextView
-                android:text="Mobile, DTH, recharge (Enter)"
-                android:layout_width="wrap_content"
-                android:textColor="@color/pink"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_height="wrap_content" android:id="@+id/rch" android:layout_weight="1"/>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:clipToPadding="false"
+                  android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+                android:id="@+id/deposit"
+                android:layout_height="190dp"
+                android:layout_width="160dp"
+                android:backgroundTint="@color/background"
+        android:layout_margin="10dp">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:gravity="center"
+
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="74dp"
+                           android:layout_height="74dp"
+                           android:src="@drawable/bank"
+                           android:padding="10dp"
+                           android:background="@drawable/circle_background"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="DEPOSIT\nBALANCE"
+                          android:textStyle="bold"
+                          android:layout_height="wrap_content"/>
+                <View android:layout_width="wrap_content"
+                      android:layout_height="1dp"
+                      android:background="@color/light_gray"
+                    android:layout_margin="10dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Deposit amount to your bank account"
+                android:gravity="center"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/withdraw"
+                android:layout_height="190dp"
+                android:layout_width="160dp"
+                android:backgroundTint="@color/background"
+                android:layout_margin="10dp">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:gravity="center"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="74dp"
+                           android:layout_height="74dp"
+                           android:src="@drawable/money"
+                           android:padding="10dp"
+                           android:background="@drawable/circle_backpink"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="WITHDRAW\nBALANCE"
+                          android:textStyle="bold"
+                          android:layout_height="wrap_content"/>
+                <View android:layout_width="wrap_content"
+                      android:layout_height="1dp"
+                      android:background="@color/light_gray"
+                      android:layout_margin="10dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Withdraw amount from your bank account"
+                android:gravity="center"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
     </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:clipToPadding="false"
+                  android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+                android:id="@+id/rch"
+                android:layout_height="190dp"
+                android:layout_width="160dp"
+                android:backgroundTint="@color/background"
+                android:layout_margin="10dp">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:gravity="center"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="74dp"
+                           android:layout_height="74dp"
+                           android:src="@drawable/mobile"
+                           android:padding="10dp"
+                           android:background="@drawable/circle_backgreen"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="RECHARGE"
+                          android:textStyle="bold"
+                          android:layout_height="wrap_content"/>
+                <View android:layout_width="wrap_content"
+                      android:layout_height="1dp"
+                      android:background="@color/light_gray"
+                      android:layout_margin="10dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:text="Recharge Mobile,DTH and bill payment"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/shopping"
+                android:backgroundTint="@color/background"
+                android:layout_height="190dp"
+                android:layout_width="160dp"
+                android:layout_margin="10dp">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:gravity="center"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="74dp"
+                           android:layout_height="74dp"
+                           android:src="@drawable/shop"
+                           android:padding="10dp"
+                           android:background="@drawable/circle_backyellow"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="SHOP"
+                          android:textStyle="bold"
+                          android:layout_height="wrap_content"/>
+                <View android:layout_width="wrap_content"
+                      android:layout_height="1dp"
+                      android:background="@color/light_gray"
+                      android:layout_margin="10dp"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Puchase Items and other grocerry products"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:clipToPadding="false"
+                          android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                        android:id="@+id/investMny"
+                        android:backgroundTint="@color/background"
+                        android:layout_height="150dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="42dp">
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:gravity="center_horizontal"
+                                  android:orientation="vertical"
+                                  android:layout_height="wrap_content">
+                        <ImageView android:layout_width="74dp"
+                                   android:layout_height="74dp"
+                                   android:src="@drawable/investment"
+                                   android:background="@drawable/button_round"
+                                   android:padding="10dp"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:text="BANKING SOLUTIONS"
+                                  android:textStyle="bold"
+                                  android:layout_height="wrap_content"/>
+
+                        <View android:layout_width="wrap_content"
+                              android:layout_height="1dp"
+                              android:background="@color/light_gray"
+                              android:layout_margin="10dp"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textStyle="bold"
+                                  android:textSize="15dp"
+                                  android:text="Invest to get more returns"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:clipToPadding="false"
+                  android:layout_marginTop="15dp"
+                  android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+                android:id="@+id/appinfo"
+                android:backgroundTint="@color/background"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="42dp">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:gravity="center"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="74dp"
+                           android:layout_height="74dp"
+                           android:src="@drawable/info"
+                           android:padding="10dp"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="About Application"
+                          android:textStyle="bold"
+                          android:layout_height="wrap_content"/>
+                <View android:layout_width="wrap_content"
+                      android:layout_height="1dp"
+                      android:background="@color/light_gray"
+                      android:layout_margin="10dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

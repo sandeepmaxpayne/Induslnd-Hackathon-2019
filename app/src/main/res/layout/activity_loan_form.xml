@@ -16,6 +16,8 @@
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical">
             <TextView
+                    android:backgroundTintMode="src_over"
+                    android:background="@color/pink_accent"
                     android:text="Loan Account Registration"
                     android:textStyle="italic"
                     android:textSize="20dp"
@@ -24,36 +26,58 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:id="@+id/regloanform"/>
             <EditText
+                    android:backgroundTint="@color/yellow"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/loanaccname" android:hint="account name"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/pink_accent"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
                     android:id="@+id/cust_id" android:hint="customer id"/>
             <Spinner
+                    android:popupBackground="@drawable/spinner_back"
+                    android:backgroundTint="@color/gray"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/curr_code"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/red"
+                    android:background="@drawable/round_edges_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="date"
                     android:ems="10"
                     android:id="@+id/loandateopen" android:hint="account opening date"/>
             <EditText
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
                     android:id="@+id/duration" android:hint="duration"/>
             <Spinner
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/spinner_back"
+                    android:backgroundTint="@color/green"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/l_type"/>
             <EditText
+                    android:backgroundTint="@color/yellow"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -63,6 +87,9 @@
                     android:ems="10"
                     android:id="@+id/loanjoin1"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/mediumPink"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -72,6 +99,9 @@
                     android:ems="10"
                     android:id="@+id/loanjoin2"/>
             <EditText
+                    android:backgroundTint="@color/loginDark"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -81,36 +111,54 @@
                     android:ems="10"
                     android:id="@+id/loanjoin3"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/lightViolet"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
                     android:id="@+id/statcode" android:hint="freeze status code"/>
             <EditText
+                    android:backgroundTint="@color/deep_purple"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/loanph" android:hint="@android:string/emptyPhoneNumber"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/firebrick"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/loantenno" android:hint="telephone number (optional)"/>
             <EditText
+                    android:backgroundTint="@color/light_back"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/loanfax" android:hint="fax number (optional)"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/salmon"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:ems="10"
                     android:id="@+id/loaneadr" android:hint="email address"/>
             <EditText
+                    android:backgroundTint="@color/hotPink"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -118,6 +166,9 @@
                     android:ems="10"
                     android:id="@+id/laddr1" android:hint="address 1"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/coldPink"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -125,6 +176,9 @@
                     android:ems="10"
                     android:id="@+id/laddr2" android:hint="address 2"/>
             <EditText
+                    android:backgroundTint="@color/green"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -132,33 +186,48 @@
                     android:ems="10"
                     android:id="@+id/laddr3" android:hint="address 3"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/firebrick"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/loancity" android:hint="city"/>
             <EditText
+                    android:backgroundTint="@color/deep_purple"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/loanstate" android:hint="state"/>
             <EditText
+                    android:background="@drawable/round_edges_login"
+                    android:backgroundTint="@color/lightViolet"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/loanpostcode" android:hint="postal code"/>
             <EditText
+                    android:backgroundTint="@color/yellow"
+                    android:background="@drawable/round_edges_login"
+                    android:layout_marginTop="1dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/loancoun" android:hint="country"/>
             <Button
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/mediumPink"
+                    android:backgroundTintMode="src_over"
                     android:text="Register"
                     android:layout_gravity="center"
-                    android:background="#4041"
+                    android:background="@drawable/button_round"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:id="@+id/loanReg"/>
 

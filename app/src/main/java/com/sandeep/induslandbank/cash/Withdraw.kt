@@ -114,6 +114,7 @@ class Withdraw : AppCompatActivity() {
                 _, _ ->  finish()
             })
         val alert = diagbuild.create()
+        alert.setIcon(R.drawable.check_mark)
         alert.setTitle("Transaction")
         alert.show()
     }
@@ -128,6 +129,7 @@ class Withdraw : AppCompatActivity() {
                 dialog, which -> dialog.cancel()
             })
         val alert = dialogMess.create()
+        alert.setIcon(R.drawable.cross)
         alert.setTitle("Transaction")
         alert.show()
     }
@@ -143,6 +145,7 @@ class Withdraw : AppCompatActivity() {
             })
         val alert = dialogMess.create()
         alert.setTitle("Transaction")
+        alert.setIcon(R.drawable.warnings)
         alert.show()
     }
     private fun wrongAccountdisplay(){
@@ -157,6 +160,7 @@ class Withdraw : AppCompatActivity() {
             })
         val alert = dialogbuilder.create()
         alert.setTitle("Transaction")
+        alert.setIcon(R.drawable.warnings)
         alert.show()
     }
 

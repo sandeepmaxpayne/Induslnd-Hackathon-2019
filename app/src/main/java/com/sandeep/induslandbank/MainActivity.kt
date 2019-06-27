@@ -81,6 +81,12 @@ class MainActivity : AppCompatActivity() {
 
                                     }
                                 }
+                            }else if(!(p0.exists())){
+                                Toast.makeText(
+                                    this@MainActivity,
+                                    "No record found! Please Register",
+                                    Toast.LENGTH_SHORT
+                                ).show()
                             }
 
                             }
@@ -88,14 +94,7 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                     ref.addValueEventListener(userList)
-                }else {
-            Toast.makeText(
-                this@MainActivity,
-                "No record found! Please Register",
-                Toast.LENGTH_SHORT
-            ).show()
-            // Log.d("ph", "phone:${data?.mobile}")
-        }
+                }
             }
 //        val bundle:Bundle? = intent.extras
 //        adhaarNumber = bundle!!.getString("adhaar")

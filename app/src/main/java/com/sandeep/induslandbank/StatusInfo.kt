@@ -6,12 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
-import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.activity_status_info.*
 
 class StatusInfo : AppCompatActivity() {
@@ -28,7 +22,7 @@ class StatusInfo : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.statusmenu, menu)
+        menuInflater.inflate(R.menu.home, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

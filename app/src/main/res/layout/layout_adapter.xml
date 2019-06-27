@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/background"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/cover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+                <ImageView
+                        android:id="@+id/fav"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/mobile"
+                        android:layout_gravity="bottom|end"
+                />
+        </FrameLayout>
+        <TextView
+                android:id="@+id/itesmdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                tools:text="Amazing T-Shirt"
+                android:textStyle="bold"
+                android:paddingTop="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="center_horizontal"/>
+
+        <TextView
+                android:id="@+id/itemqlty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                tools:text="Dr. Seuss"
+                android:gravity="center_horizontal"/>
+
+
+
+
+
+</LinearLayout>
