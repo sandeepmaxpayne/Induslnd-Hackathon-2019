@@ -1,5 +1,5 @@
 # Induslnd-Hackathon-2019 Prototype [JIO-CODE-GLADIATORS FINAL ROUND SOLUTION]
-Fintech Hackathon 
+<strong>Fintech Hackathon</strong> 
 ``This is the prototype project made on the problem statement Induslnd Hackathon 2019 organised by Techgigg``
 
 {Top 5 projects were qualified for final round and this is one of them}
@@ -29,3 +29,5 @@ Extensions made to previous application
 4. Compare your products and get a choice of choosing the product according to app's decision
 5. Customers can satisfy themselves by browsing to other online stores.
 6. User Interface changeable
+
+<i> At last the challenge was tough and I made myself upto the finale. <i>
